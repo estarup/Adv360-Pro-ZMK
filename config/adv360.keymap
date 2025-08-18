@@ -31,7 +31,7 @@
 //    ├──────────┼───┼──────┼──────┼──────┼───┼───────┤                           ├──────┼───┼────┼──────┼───┼───┼──────┤
 //    │   tab    │ ; │  ,   │  .   │  P   │ Y │ tog 4 │                           │      │ F │ G  │  C   │ R │ L │  ?   │
 //    ├──────────┼───┼──────┼──────┼──────┼───┼───────┼──────┬──────┬──────┬──────┼──────┼───┼────┼──────┼───┼───┼──────┤
-//    │   esc    │ O │  O   │  E   │  U   │ I │ tog 0 │ lctl │ lalt │ lgui │ rctl │      │ D │ H  │  T   │ N │ S │  -   │
+//    │   esc    │ A │  O   │  E   │  U   │ I │ tog 0 │ lctl │ lalt │ lgui │ rctl │      │ D │ H  │  T   │ N │ S │  -   │
 //    ├──────────┼───┼──────┼──────┼──────┼───┼───────┴──────┼──────┼──────┼──────┴──────┼───┼────┼──────┼───┼───┼──────┤
 //    │ &sk lsft │ ' │  Q   │  J   │  K   │ X │              │ home │ pgup │             │ B │ M  │  W   │ V │ Z │ rsft │
 //    ├──────────┼───┼──────┼──────┼──────┼───┼───────┬──────┼──────┼──────┼──────┬──────┼───┼────┼──────┼───┼───┼──────┤
@@ -39,7 +39,7 @@
 //    └──────────┴───┴──────┴──────┴──────┘   └───────┴──────┴──────┴──────┴──────┴──────┘   └────┴──────┴───┴───┴──────┘
   &kp DOLLAR   &kp B      &kp LEFT_BRACKET   &kp LBRC   &kp LEFT_PARENTHESIS   &kp AMPS   &tog 1                                                           &mo 3       &kp EQUAL   &kp RPAR   &kp RBRC   &kp RBKT   &kp STAR   &kp PIPE
   &kp TAB      &kp SEMI   &kp COMMA          &kp DOT    &kp P                  &kp Y      &tog 4                                                           &trans      &kp F       &kp G      &kp C      &kp R      &kp L      &kp QUESTION
-  &kp ESC      &kp O      &kp O              &kp E      &kp U                  &kp I      &tog 0     &kp LCTRL   &kp LEFT_ALT   &kp LEFT_WIN   &kp RCTRL   &trans      &kp D       &kp H      &kp T      &kp N      &kp S      &kp MINUS
+  &kp ESC      &kp A      &kp O              &kp E      &kp U                  &kp I      &tog 0     &kp LCTRL   &kp LEFT_ALT   &kp LEFT_WIN   &kp RCTRL   &trans      &kp D       &kp H      &kp T      &kp N      &kp S      &kp MINUS
   &sk LSHIFT   &kp SQT    &kp Q              &kp J      &kp K                  &kp X                             &kp HOME       &kp PG_UP                              &kp B       &kp M      &kp W      &kp V      &kp Z      &kp RSHFT
   &mo 2        &kp DLLR   &kp CAPS           &kp LEFT   &kp RIGHT                         &kp BSPC   &kp DEL     &kp END        &kp PG_DN      &kp RET     &kp SPACE               &kp UP     &kp DOWN   &kp FSLH   &kp AT     &trans
             >;
@@ -55,7 +55,7 @@
 //    ├─────┼─────┼─────┼─────┼─────┼─────┼───────┤                       ├──────┼─────┼─────┼─────┼───┼─────┼─────┤
 //    │     │     │     │     │     │     │       │                       │      │     │  7  │  8  │ 9 │  -  │     │
 //    ├─────┼─────┼─────┼─────┼─────┼─────┼───────┼─────┬─────┬─────┬─────┼──────┼─────┼─────┼─────┼───┼─────┼─────┤
-//    │     │     │     │     │     │     │       │     │     │     │     │      │     │  4  │  5  │ 6 │  +  │  -  │
+//    │     │  A  │     │     │     │     │       │     │     │     │     │      │     │  4  │  5  │ 6 │  +  │  -  │
 //    ├─────┼─────┼─────┼─────┼─────┼─────┼───────┴─────┼─────┼─────┼─────┴──────┼─────┼─────┼─────┼───┼─────┼─────┤
 //    │     │     │     │     │     │     │             │     │     │            │     │  1  │  2  │ 3 │     │     │
 //    ├─────┼─────┼─────┼─────┼─────┼─────┼───────┬─────┼─────┼─────┼─────┬──────┼─────┼─────┼─────┼───┼─────┼─────┤
@@ -63,7 +63,7 @@
 //    └─────┴─────┴─────┴─────┴─────┘     └───────┴─────┴─────┴─────┴─────┴──────┘     └─────┴─────┴───┴─────┴─────┘
   &trans   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &kp NUMBER_5   &tog 1                                       &mo 3    &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp NUMBER_0   &trans
   &trans   &trans         &trans         &trans         &trans         &trans         &trans                                       &trans   &trans         &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp MINUS      &trans
-  &trans   &trans         &trans         &trans         &trans         &trans         &trans   &trans   &trans   &trans   &trans   &trans   &trans         &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6   &kp PLUS       &kp MINUS
+  &trans   &kp A          &trans         &trans         &trans         &trans         &trans   &trans   &trans   &trans   &trans   &trans   &trans         &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6   &kp PLUS       &kp MINUS
   &trans   &trans         &trans         &trans         &trans         &trans                           &trans   &trans                     &trans         &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &trans         &trans
   &trans   &trans         &trans         &trans         &trans                        &trans   &trans   &trans   &trans   &trans   &trans                  &trans         &trans         &kp NUMBER_0   &trans         &trans
             >;
