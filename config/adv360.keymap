@@ -98,7 +98,7 @@
         compatible = "zmk,behavior-mod-morph";
         label = "dllr_tilde";
         #binding-cells = <0>;
-        bindings = <&kp 1>, <&kp GRAVE>;
+        bindings = <&kp DOLLAR>, <&kp GRAVE>;
         mods = <(LSHIFT|RSHIFT)>;
     };
 
