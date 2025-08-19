@@ -24,7 +24,7 @@
         compatible = "zmk,behavior-mod-morph";
         label = "plus_kp_n1";
         #binding-cells = <0>;
-        bindings = <&kp PLUS>, <&kp KP_N1>;
+        bindings = <&kp PLUS>, <&kp NUMBER_1>;
         mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
     };
     dt: dollar_tilde {
