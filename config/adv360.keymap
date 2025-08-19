@@ -93,22 +93,21 @@
         mods = <(LSHIFT|RSHIFT)>;
     };
         
+    /* dtilde: dllr_tilde { */
+    /*     compatible = "zmk,behavior-mod-morph"; */
+    /*     label = "dllr_tilde"; */
+    /*     #binding-cells = <0>; */
+    /*     bindings = <&kp DOLLAR>, <&kp TILDE>; */
+    /*     mods = <(LSHIFT|RSHIFT)>; */
+    /* }; */
 
-    dtilde: dllr_tilde {
-        compatible = "zmk,behavior-mod-morph";
-        label = "dllr_tilde";
-        #binding-cells = <0>;
-        bindings = <&kp DOLLAR>, <&kp TILDE>;
-        mods = <(LSHIFT|RSHIFT)>;
-    };
-
-    gh: grave_hash {
-        compatible = "zmk,behavior-mod-morph";
-        label = "grave_hash";
-        #binding-cells = <0>;
-        bindings = <&kp GRAVE>, <&kp HASH>;
-        mods = <(LSHIFT|RSHIFT)>;
-    };
+    /* gh: grave_hash { */
+    /*     compatible = "zmk,behavior-mod-morph"; */
+    /*     label = "grave_hash"; */
+    /*     #binding-cells = <0>; */
+    /*     bindings = <&kp GRAVE>, <&kp HASH>; */
+    /*     mods = <(LSHIFT|RSHIFT)>; */
+    /* }; */
     keymap {
         compatible = "zmk,keymap";
 
