@@ -98,7 +98,8 @@
         bindings = <&kp STAR>, <&kp N0>;
         mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
     };
-
+         
+    // Symbols
     dtilde: dllr_tilde {
         compatible = "zmk,behavior-mod-morph";
         label = "dllr_tilde";
@@ -106,7 +107,6 @@
         bindings = <&kp DLLR>, <&kp TILDE>;
         mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
     };
-        
     ahash: at_hash {
         compatible = "zmk,behavior-mod-morph";
         label = "at_hash";
@@ -114,7 +114,21 @@
         bindings = <&kp AT>, <&kp HASH>;
         mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
     };
-
+    pmult: percent_multiply {
+        compatible = "zmk,behavior-mod-morph";
+        label = "percent_multiply";
+        #binding-cells = <0>;
+        bindings = <&kp PERCENT>, <&kp STAR>;
+        mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+    };
+    ecar: excl_caret {
+        compatible = "zmk,behavior-mod-morph";
+        label = "excl_caret";
+        #binding-cells = <0>;
+        bindings = <&kp EXCL>, <&kp CARET>;
+        mods = <(LGUI|LSHIFT|RGUI|RSHIFT)>;
+    };
+        
     keymap {
         compatible = "zmk,keymap";
 
@@ -125,19 +139,19 @@
 //    ├──────────┼─────────┼─────────┼─────────┼─────────┼─────────┼────────────┤                           ├──────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
 //    │   tab    │    ;    │    ,    │    .    │    P    │    Y    │ tog GAME_L │                           │          │    F    │    G    │    C    │    R    │    L    │    /    │
 //    ├──────────┼─────────┼─────────┼─────────┼─────────┼─────────┼────────────┼──────┬──────┬──────┬──────┼──────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-//    │   esc    │    A    │    O    │    E    │    U    │    I    │     !      │ lctl │ lalt │ lgui │ rctl │    %     │    D    │    H    │    T    │    N    │    S    │    -    │
+//    │   esc    │    A    │    O    │    E    │    U    │    I    │   &ecar    │ lctl │ lalt │ lgui │ rctl │  &pmult  │    D    │    H    │    T    │    N    │    S    │    -    │
 //    ├──────────┼─────────┼─────────┼─────────┼─────────┼─────────┼────────────┴──────┼──────┼──────┼──────┴──────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
 //    │ &sk lsft │    '    │    Q    │    J    │    K    │    X    │                   │ home │ pgup │                 │    B    │    M    │    W    │    V    │    Z    │  rsft   │
 //    ├──────────┼─────────┼─────────┼─────────┼─────────┼─────────┼────────────┬──────┼──────┼──────┼──────┬──────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
 //    │ mo FN_L  │    `    │  caps   │  left   │  rght   │         │    bspc    │ del  │ end  │ pgdn │ ent  │   spc    │         │   up    │  down   │    /    │ &ahash  │ mo FN_L │
 //    └──────────┴─────────┴─────────┴─────────┴─────────┘         └────────────┴──────┴──────┴──────┴──────┴──────────┘         └─────────┴─────────┴─────────┴─────────┴─────────┘
-  &dtilde     &pkp_n1     &lkp_n2     &lkp_n3    &lkp_n4     &akp_n5   &tog KP_L                                                           &mo MOD_L     &ekp_n6   &rkp_n7   &rkp_n8    &rkp_n9    &skp_n0   &kp PIPE
-  &kp TAB     &kp SEMI    &kp COMMA   &kp DOT    &kp P       &kp Y     &tog GAME_L                                                         &trans        &kp F     &kp G     &kp C      &kp R      &kp L     &kp FSLH
-  &kp ESC     &kp A       &kp O       &kp E      &kp U       &kp I     &kp EXCL      &kp LCTRL   &kp LEFT_ALT   &kp LEFT_WIN   &kp RCTRL   &kp PERCENT   &kp D     &kp H     &kp T      &kp N      &kp S     &kp MINUS
-  &sk LSHFT   &kp SQT     &kp Q       &kp J      &kp K       &kp X                               &kp HOME       &kp PG_UP                                &kp B     &kp M     &kp W      &kp V      &kp Z     &kp RSHFT
-  &mo FN_L    &kp GRAVE   &kp CAPS    &kp LEFT   &kp RIGHT             &kp BSPC      &kp DEL     &kp END        &kp PG_DN      &kp RET     &kp SPACE               &kp UP    &kp DOWN   &kp FSLH   &ahash    &mo FN_L
+  &dtilde     &pkp_n1     &lkp_n2     &lkp_n3    &lkp_n4     &akp_n5   &tog KP_L                                                           &mo MOD_L   &ekp_n6   &rkp_n7   &rkp_n8    &rkp_n9    &skp_n0   &kp PIPE
+  &kp TAB     &kp SEMI    &kp COMMA   &kp DOT    &kp P       &kp Y     &tog GAME_L                                                         &trans      &kp F     &kp G     &kp C      &kp R      &kp L     &kp FSLH
+  &kp ESC     &kp A       &kp O       &kp E      &kp U       &kp I     &ecar         &kp LCTRL   &kp LEFT_ALT   &kp LEFT_WIN   &kp RCTRL   &pmult      &kp D     &kp H     &kp T      &kp N      &kp S     &kp MINUS
+  &sk LSHFT   &kp SQT     &kp Q       &kp J      &kp K       &kp X                               &kp HOME       &kp PG_UP                              &kp B     &kp M     &kp W      &kp V      &kp Z     &kp RSHFT
+  &mo FN_L    &kp GRAVE   &kp CAPS    &kp LEFT   &kp RIGHT             &kp BSPC      &kp DEL     &kp END        &kp PG_DN      &kp RET     &kp SPACE             &kp UP    &kp DOWN   &kp FSLH   &ahash    &mo FN_L
             >;
-
+    
             label = "Base";
         };
 
