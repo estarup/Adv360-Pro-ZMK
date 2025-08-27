@@ -230,14 +230,14 @@
 //    ├─────┼──────┼─────┼─────┼─────┼───┼─────┼──────┬─────┬─────┬─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 //    │ esc │ lsft │  A  │  S  │  D  │ F │     │      │     │     │     │     │     │     │     │     │     │     │
 //    ├─────┼──────┼─────┼─────┼─────┼───┼─────┴──────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-//    │     │ lctl │  Z  │  U  │  C  │ G │            │     │     │           │     │     │     │     │     │     │
+//    │     │ lctl │  Z  │  T  │  C  │ G │            │     │     │           │     │     │     │     │     │     │
 //    ├─────┼──────┼─────┼─────┼─────┼───┼─────┬──────┼─────┼─────┼─────┬─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 //    │     │      │     │     │     │   │ spc │ bspc │     │     │     │     │     │     │     │     │     │     │
 //    └─────┴──────┴─────┴─────┴─────┘   └─────┴──────┴─────┴─────┴─────┴─────┘     └─────┴─────┴─────┴─────┴─────┘
   &trans       &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &kp N5   &trans                                                 &trans   &trans   &trans   &trans   &trans   &trans   &trans
   &trans       &kp TAB        &kp Q          &kp W          &kp E          &kp R    &trans                                                 &trans   &trans   &trans   &trans   &trans   &trans   &trans
   &kp ESCAPE   &kp LSHFT      &kp A          &kp S          &kp D          &kp F    &trans      &trans          &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
-  &trans       &kp LCTRL      &kp Z          &kp U          &kp C          &kp G                                &trans   &trans                     &trans   &trans   &trans   &trans   &trans   &trans
+  &trans       &kp LCTRL      &kp Z          &kp T          &kp C          &kp G                                &trans   &trans                     &trans   &trans   &trans   &trans   &trans   &trans
   &trans       &trans         &trans         &trans         &trans                  &kp SPACE   &kp BACKSPACE   &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans
             >;
         };
