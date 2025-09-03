@@ -224,21 +224,21 @@
             display-name = "Game";
             bindings = <
 //    ┌─────┬──────┬─────┬─────┬─────┬───┬─────┐                        ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┐
-//    │     │  1   │  2  │  3  │  4  │ 5 │     │                        │     │     │     │     │     │     │     │
+//    │     │  1   │  1  │  2  │  3  │ 4 │     │                        │     │     │     │     │     │     │     │
 //    ├─────┼──────┼─────┼─────┼─────┼───┼─────┤                        ├─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-//    │     │ tab  │  Q  │  W  │  E  │ R │     │                        │     │     │     │     │     │     │     │
+//    │ tab │  T   │  Q  │  W  │  E  │ R │     │                        │     │     │     │     │     │     │     │
 //    ├─────┼──────┼─────┼─────┼─────┼───┼─────┼──────┬─────┬─────┬─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 //    │ esc │ lsft │  A  │  S  │  D  │ F │     │      │     │     │     │     │     │     │     │     │     │     │
 //    ├─────┼──────┼─────┼─────┼─────┼───┼─────┴──────┼─────┼─────┼─────┴─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-//    │     │ lctl │  Z  │  T  │  C  │ G │            │     │     │           │     │     │     │     │     │     │
+//    │     │ lctl │  Z  │  X  │  C  │ G │            │     │     │           │     │     │     │     │     │     │
 //    ├─────┼──────┼─────┼─────┼─────┼───┼─────┬──────┼─────┼─────┼─────┬─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 //    │     │      │     │     │     │   │ spc │ bspc │     │     │     │     │     │     │     │     │     │     │
 //    └─────┴──────┴─────┴─────┴─────┘   └─────┴──────┴─────┴─────┴─────┴─────┘     └─────┴─────┴─────┴─────┴─────┘
-  &trans       &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &kp N5   &trans                                                 &trans   &trans   &trans   &trans   &trans   &trans   &trans
-  &trans       &kp TAB        &kp Q          &kp W          &kp E          &kp R    &trans                                                 &trans   &trans   &trans   &trans   &trans   &trans   &trans
-  &kp ESCAPE   &kp LSHFT      &kp A          &kp S          &kp D          &kp F    &trans      &trans          &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
-  &trans       &kp LCTRL      &kp Z          &kp T          &kp C          &kp G                                &trans   &trans                     &trans   &trans   &trans   &trans   &trans   &trans
-  &trans       &trans         &trans         &trans         &trans                  &kp SPACE   &kp BACKSPACE   &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans
+  &trans       &kp N1      &kp N1   &kp N2   &kp N3   &kp N4   &trans                                                 &trans   &trans   &trans   &trans   &trans   &trans   &trans
+  &kp TAB      &kp T       &kp Q    &kp W    &kp E    &kp R    &trans                                                 &trans   &trans   &trans   &trans   &trans   &trans   &trans
+  &kp ESCAPE   &kp LSHFT   &kp A    &kp S    &kp D    &kp F    &trans      &trans          &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans   &trans
+  &trans       &kp LCTRL   &kp Z    &kp X    &kp C    &kp G                                &trans   &trans                     &trans   &trans   &trans   &trans   &trans   &trans
+  &trans       &trans      &trans   &trans   &trans            &kp SPACE   &kp BACKSPACE   &trans   &trans   &trans   &trans            &trans   &trans   &trans   &trans   &trans
             >;
         };
     };
