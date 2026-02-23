@@ -179,22 +179,22 @@
         keypad {
             display-name = "Kp";
             bindings = <
-//    ┌─────┬─────┬─────┬─────┬─────┬─────┬──────────┐                       ┌──────┬─────┬─────┬─────┬───┬─────┬─────┐
-//    │     │  1  │  2  │  3  │  4  │  5  │ tog KP_L │                       │ mo 4 │  6  │  7  │  8  │ 9 │  0  │     │
-//    ├─────┼─────┼─────┼─────┼─────┼─────┼──────────┤                       ├──────┼─────┼─────┼─────┼───┼─────┼─────┤
-//    │     │     │     │     │     │     │          │                       │      │     │  7  │  8  │ 9 │  -  │     │
-//    ├─────┼─────┼─────┼─────┼─────┼─────┼──────────┼─────┬─────┬─────┬─────┼──────┼─────┼─────┼─────┼───┼─────┼─────┤
-//    │     │     │     │     │     │     │          │     │     │     │     │      │     │  4  │  5  │ 6 │  +  │  -  │
-//    ├─────┼─────┼─────┼─────┼─────┼─────┼──────────┴─────┼─────┼─────┼─────┴──────┼─────┼─────┼─────┼───┼─────┼─────┤
-//    │     │     │     │     │     │     │                │     │     │            │     │  1  │  2  │ 3 │     │     │
-//    ├─────┼─────┼─────┼─────┼─────┼─────┼──────────┬─────┼─────┼─────┼─────┬──────┼─────┼─────┼─────┼───┼─────┼─────┤
-//    │     │     │     │     │     │     │          │     │     │     │     │      │     │     │     │ 0 │     │     │
-//    └─────┴─────┴─────┴─────┴─────┘     └──────────┴─────┴─────┴─────┴─────┴──────┘     └─────┴─────┴───┴─────┴─────┘
-  &trans   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &kp NUMBER_5   &tog KP_L                                       &mo 4    &kp NUMBER_6   &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp NUMBER_0   &trans
-  &trans   &trans         &trans         &trans         &trans         &trans         &trans                                          &trans   &trans         &kp NUMBER_7   &kp NUMBER_8   &kp NUMBER_9   &kp MINUS      &trans
-  &trans   &trans         &trans         &trans         &trans         &trans         &trans      &trans   &trans   &trans   &trans   &trans   &trans         &kp NUMBER_4   &kp NUMBER_5   &kp NUMBER_6   &kp PLUS       &kp MINUS
-  &trans   &trans         &trans         &trans         &trans         &trans                              &trans   &trans                     &trans         &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &trans         &trans
-  &trans   &trans         &trans         &trans         &trans                        &trans      &trans   &trans   &trans   &trans   &trans                  &trans         &trans         &kp NUMBER_0   &trans         &trans
+//    ┌─────┬─────┬─────┬─────┬─────┬─────┬──────────┐                       ┌──────┬─────┬─────┬─────┬───┬──────┬──────┐
+//    │     │  1  │  2  │  3  │  4  │  5  │ tog KP_L │                       │ mo 4 │  6  │  7  │  8  │ 9 │  0   │      │
+//    ├─────┼─────┼─────┼─────┼─────┼─────┼──────────┤                       ├──────┼─────┼─────┼─────┼───┼──────┼──────┤
+//    │     │     │     │     │     │     │          │                       │      │     │  7  │  8  │ 9 │ kp_- │      │
+//    ├─────┼─────┼─────┼─────┼─────┼─────┼──────────┼─────┬─────┬─────┬─────┼──────┼─────┼─────┼─────┼───┼──────┼──────┤
+//    │     │     │     │     │     │     │          │     │     │     │     │      │     │  4  │  5  │ 6 │ kp_+ │ kp_- │
+//    ├─────┼─────┼─────┼─────┼─────┼─────┼──────────┴─────┼─────┼─────┼─────┴──────┼─────┼─────┼─────┼───┼──────┼──────┤
+//    │     │     │     │     │     │     │                │     │     │            │     │  1  │  2  │ 3 │      │      │
+//    ├─────┼─────┼─────┼─────┼─────┼─────┼──────────┬─────┼─────┼─────┼─────┬──────┼─────┼─────┼─────┼───┼──────┼──────┤
+//    │     │     │     │     │     │     │          │     │     │     │     │      │     │     │     │ 0 │      │      │
+//    └─────┴─────┴─────┴─────┴─────┘     └──────────┴─────┴─────┴─────┴─────┴──────┘     └─────┴─────┴───┴──────┴──────┘
+  &trans   &kp NUMBER_1   &kp NUMBER_2   &kp NUMBER_3   &kp NUMBER_4   &kp NUMBER_5   &tog KP_L                                       &mo 4    &kp NUMBER_6   &kp NUMBER_7      &kp NUMBER_8      &kp NUMBER_9      &kp NUMBER_0   &trans
+  &trans   &trans         &trans         &trans         &trans         &trans         &trans                                          &trans   &trans         &kp KP_NUMBER_7   &kp KP_NUMBER_8   &kp KP_NUMBER_9   &kp KP_MINUS   &trans
+  &trans   &trans         &trans         &trans         &trans         &trans         &trans      &trans   &trans   &trans   &trans   &trans   &trans         &kp KP_NUMBER_4   &kp KP_NUMBER_5   &kp KP_NUMBER_6   &kp KP_PLUS    &kp KP_MINUS
+  &trans   &trans         &trans         &trans         &trans         &trans                              &trans   &trans                     &trans         &kp KP_NUMBER_1   &kp KP_NUMBER_2   &kp KP_NUMBER_3   &trans         &trans
+  &trans   &trans         &trans         &trans         &trans                        &trans      &trans   &trans   &trans   &trans   &trans                  &trans            &trans            &kp KP_NUMBER_0   &trans         &trans
             >;
         };
 
